@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* * is universal selector so this part is for the entire html document */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* below is for nav */
+nav {
+    background-color: rgb(68, 10, 6);
+    color: blanchedalmond;
+    /* inches (1in = 96px = 2.54cm).Pixels have fixed sizes. One pixel is usually equal to one dot on the screen. Because pixels 
+    are fixed sizes, they do not change. This can be a good and bad thing. It allows web developers to 
+    make the most accurate, or “pixel-perfect”, rendition of web designs. */
+    height: 60px;
+    font-size: 27px;
+    /* A flex container expands items to fill available free space or shrinks them to prevent overflow. */
+    display: flex;
+    align-items: center;
+    /* https://www.w3schools.com/css/css_padding.asp */
+    padding: 0 12px;
+    font-family: 'Quintessential', cursive;
+}
+
+/* this(below) css is for nav ul */
+nav ul{
+    /* this removes the bullet symbol */
+    list-style-type: none; 
+}
+.gameContainer{
+    /* background-color: chartreuse; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+/* if we give fontsize in vw helps in making responsive */
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+/*.container div */
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.box:hover{
+    background-color: #f3c7cb;
+}
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Lato', sans-serif;
+}
+.imgbox img{
+    width:0;
+    transition: width 1s ease-in-out;
+
+
+}
+.info{
+    font-size: 20px;
+    /* font-weight: 400; */
+    font-weight: bold;
+}
+#reset{
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #d59a9a;
+    cursor: pointer;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
